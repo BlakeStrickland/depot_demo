@@ -14,6 +14,10 @@
  *= require_self
  */
 
+
+.logo {
+  margin-bottom: 10px;
+}
 .depot_form {
 
   fieldset {
@@ -61,7 +65,10 @@
   text-align: center;
 
   img {
+    padding-left: 10%;
     float:left;
+    height: 50px;
+    width: 80px;
   }
 }
 
@@ -78,7 +85,7 @@
   background: #141;
 
   #main {
-    margin-left: 17em;
+    margin-left: 18em;
     padding: 1em;
     background: white;
   }
@@ -86,7 +93,7 @@
   #side {
     float: left;
     padding: 1em 2em;
-    width: 13em;
+    width: 14em;
     background: #141;
 
     form, div {
