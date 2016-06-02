@@ -22,5 +22,15 @@ module Depot
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      :authentication => :plain,
+      :address => "smtp.mailgun.org",
+      :port => 587,
+      :domain => "sandbox4f3a918b0e6f4214b94c38913d36fc9e.mailgun.org",
+      :user_name => "postmaster@sandbox4f3a918b0e6f4214b94c38913d36fc9e.mailgun.org",
+      :password => "d75f9652b94bd3d4c3e84a1a976bde62"
+    }
   end
 end
