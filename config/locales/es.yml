@@ -9,6 +9,9 @@ es:
       questions:      "Preguntas"
       news:           "Noticias"
       contact:        "Contacto"
+      adminUsers:           "Usuarios"
+      adminOrders:          "Pedidos"
+      adminProducts:        "Productos"
 
 
   store:
@@ -43,6 +46,7 @@ es:
       submit:         "Realizar Pedido"
 
 
+
   activerecord:
     errors:
       messages:
@@ -62,5 +66,5 @@ es:
         name:            "Nombre"
         email:           "E-mail"
         pay_type:        "Forma de pago"
-
-  thanks:                "Gracias por su pedido"
+      create:
+        thanks:           "Gracias por su pedido"
