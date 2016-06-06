@@ -40,4 +40,4 @@ en:
         pay_prompt_html: "Select a payment method"
         submit:         "Place Order"
       create:
-        thanks:               "Thank you for your order"
+        thanks:         "Thank you for your order"
