@@ -12,4 +12,5 @@ class Order < ActiveRecord::Base
       line_items << item
     end
   end
+
 end

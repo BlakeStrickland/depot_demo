@@ -16,16 +16,12 @@ image_url: "ruby.png",
 price: 49.95)
 
 Product.create!(title: "DevOps in Practice",
-description: %{<p>
-Super sweet cover and a good dipiction of what I am currently working on.
-</p>},
+description: "Super sweet cover and a good dipiction of what I am currently working on.",
 image_url: "devops.jpg",
 price: 49.95)
 
 Product.create!(title: "Rapid Android Development",
-description: %{<p>
-Next stop.
-</p>},
+description: "Next stop.",
 image_url: "android.png",
 price: 49.95)
 
@@ -46,3 +42,7 @@ cart4 = Cart.create!()
 LineItem.create!(product_id: 1, cart_id: cart1.id, order_id: 1)
 LineItem.create!(product_id: 3, cart_id: cart2.id, order_id: 2)
 LineItem.create!(product_id: 2, cart_id: cart3.id, order_id: 3)
+LineItem.create!(product_id: 3, cart_id: cart3.id, order_id: 3)
+LineItem.create!(product_id: 3, cart_id: cart4.id, order_id: 4)
+LineItem.create!(product_id: 2, cart_id: cart4.id, order_id: 4)
+LineItem.create!(product_id: 1, cart_id: cart4.id, order_id: 4)

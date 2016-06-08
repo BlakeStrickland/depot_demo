@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+  <p id="notice"> <%= notice %> </p>
+<% end %>
 
 <p>
   <strong>Name:</strong>
@@ -18,6 +20,26 @@
 <p>
   <strong>Pay type:</strong>
   <%= @order.pay_type %>
+</p>
+
+<p>
+  <strong>Products Purchased:</strong>
+  <% @order.line_items.each do |item| %>
+    <li><%= item.product.title %></li>
+  <% end %>
+</p>
+
+<p>
+  <strong>Total Price:</strong>
+  <% array = [] %>
+  <% @order.line_items.each do |line| %>
+
+    <% array.append(line.product.price.to_f) %>
+    <%= %>
+
+  <% end %>
+  <%= number_to_currency(array.reduce:+) %>
+
 </p>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |
