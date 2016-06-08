@@ -6,7 +6,7 @@ es:
     application:
       title:          "Pragmáticamente Impresionante"
       home:           "Inicio"
-      questions:      "Preguntas"
+      admin:          "Administración"
       news:           "Noticias"
       contact:        "Contacto"
       adminUsers:           "Usuarios"

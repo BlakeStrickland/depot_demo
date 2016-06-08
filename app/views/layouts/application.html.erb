@@ -32,10 +32,10 @@
       </div>
 
       <ul>
-        <li><a href="http://google.com"><%= t('.home') %></a></li>
-        <li><a href="http://google.com"><%= t('.questions') %></a></li>
-        <li><a href="http://google.com"><%= t('.news') %></a></li>
-        <li><a href="http://google.com"><%= t('.contact') %></a></li>
+        <li><%= link_to t('.home'), store_path %></a></li>
+        <li><a href="http://rubyweekly.com/"><%= t('.news') %></a></li>
+        <li><a href="https://www.linkedin.com/in/blake-strickland-173314107"><%= t('.contact') %></a></li>
+        <li><%= link_to t('.admin'), login_path%></li>
       </ul>
 
       <% if session[:user_id] %>
